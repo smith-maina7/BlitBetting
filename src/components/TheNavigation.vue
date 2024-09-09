@@ -39,7 +39,7 @@ const toggleDropdown = (show) => {
         Football
         <ul v-if="dropdown">
           <li>
-            <router-link to="/about" class="navbar-link">
+            <router-link :to="{ name: 'football' }" class="navbar-link">
               <img src="../assets/Images/Countrys/England flag.png" alt="Premier league Image" />
               England
             </router-link>
