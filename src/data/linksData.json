@@ -1,0 +1,40 @@
+{
+  "leagues": [
+    {
+      "id": 1,
+      "country": "England",
+      "image": "England flag.png",
+      "currentSeason": "2022-2023"
+    },
+    {
+      "id": 2,
+      "country": "Spain",
+      "image": "Spain flag.png",
+      "currentSeason": "2022-2023"
+    },
+    {
+      "id": 3,
+      "country": "Italy",
+      "image": "Italy flag.png",
+      "currentSeason": "2022-2023"
+    },
+    {
+      "id": 4,
+      "country": "Germany",
+      "image": "Germany flag.png",
+      "currentSeason": "2022-2023"
+    },
+    {
+      "id": 5,
+      "country": "Netherlands",
+      "image": "Netherlands flag.png",
+      "currentSeason": "2022-2023"
+    },
+    {
+      "id": 6,
+      "country": "France",
+      "image": "France flag.png",
+      "currentSeason": "2022-2023"
+    }
+  ]
+}
