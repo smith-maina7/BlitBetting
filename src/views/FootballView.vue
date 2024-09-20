@@ -5,24 +5,30 @@ import linksdata from '../data/linksData.json'
 
 // Get the route parameters
 const route = useRoute()
-// Extract the footballId from the route params and convert it to an integer
 const footballId = parseInt(route.params.id)
-console.log(footballId)
-// Access the leagues array and find the matching league based on the id
+
+// Compute the league based on the ID
 const leagueDestination = computed(() => linksdata.leagues.find((link) => link.id === footballId))
-console.log(leagueDestination.value)
+console.log(leagueDestination.value.country)
 </script>
 
 <template>
-  <template> </template>
+  <div v-if="leagueDestination">
+    <h2>{{ leagueDestination.country }} League</h2>
+    <h2>{{ leagueDestination.country }}: League</h2>
+    <img
+      :src="`../assets/Images/Countrys/${leagueDestination.image}`"
+      :alt="leagueDestination.country"
+    />
+  </div>
+  <div v-else>
+    <h2>League not found</h2>
+  </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
+img {
+  max-width: 100px;
+  height: auto;
 }
 </style>

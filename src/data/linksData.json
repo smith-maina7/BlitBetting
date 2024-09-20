@@ -3,13 +3,13 @@
     {
       "id": 1,
       "country": "England",
-      "image": "England flag.png",
+      "image": "src/assets/Images/Countrys/England flag.png",
       "currentSeason": "2022-2023"
     },
     {
       "id": 2,
       "country": "Spain",
-      "image": "Spain flag.png",
+      "image": "/src/assets/Images/Countrys/Spain flag.png",
       "currentSeason": "2022-2023"
     },
     {
